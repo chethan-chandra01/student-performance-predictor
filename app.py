@@ -37,7 +37,7 @@ model=data["model"]
 new_info=[age,traveltime,freetime,health,studytime,activities,internet,absences,g1,g2,failures,romantic]
 #[13,2,1,2,8,1,1,0,10,15,0,0]
 if st.button("Predict Performance"):
-    prediction=model.predict([new_info])
+    prediction=model.predict([new_info])[0]
     prediction=float(prediction)
     if(prediction>20):
         st.success(f'Your predicted Score is 20')
