@@ -43,14 +43,9 @@ if st.button("Predict Performance"):
         st.success(f'Your predicted Score is 20')
     else:
         st.success(f'Expected Score is :{round(prediction,2)}')
-    if(prediction>=15):
+    if(prediction>15):
         st.success("Excellent performance is expected!!")
-    elif( prediction>=10):
-        st.info("Average performance is expected")
-    else:
-        st.warning("Improvement needed!!")
-
-    elif( prediction>=10):
+    elif( prediction>10):
         st.info("Average performance is expected")
     else:
         st.warning("Improvement needed!!")
