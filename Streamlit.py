@@ -104,12 +104,9 @@ if st.button("Predict Performance"):
 
     if(prediction>=15):
         st.success("Excellent performance is expected!!")
-    elif( prediction>=10):
-=======
-    if(prediction>15):
-        st.success("Excellent performance is expected!!")
+    
     elif( prediction>10):
->>>>>>> 1edb4903ba3a9e3af4f60b35dd3986206a9a2443:app.py
+
         st.info("Average performance is expected")
     else:
         st.warning("Improvement needed!!")
