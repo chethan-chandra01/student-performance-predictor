@@ -92,7 +92,7 @@ st.write("Hi",name,",\n\nHere is the data you entered , Please check once\n\n"
 data=joblib.load("model.pkl")
 model=data["model"]
 new_info=[age,traveltime,freetime,health,studytime,activities,internet,absences,g1,g2,failures,romantic]
->>>>>>> 1edb4903ba3a9e3af4f60b35dd3986206a9a2443:app.py
+
 #[13,2,1,2,8,1,1,0,10,15,0,0]
 if st.button("Predict Performance"):
     prediction=model.predict([new_info])[0]
@@ -101,7 +101,7 @@ if st.button("Predict Performance"):
         st.success(f'Your predicted Score is 20')
     else:
         st.success(f'Expected Score is :{round(prediction,2)}')
-<<<<<<< HEAD:Streamlit.py
+
     if(prediction>=15):
         st.success("Excellent performance is expected!!")
     elif( prediction>=10):
