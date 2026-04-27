@@ -1,0 +1,12 @@
+Comparing the performance of various models used to predict the performance of the Student:
+
+    Metrics                    R2_Score                Mean_absolute_error         Mean_squared_error
+Linear Regression           80.90034386153616          1.2962039250737711           4.400150758216821 
+Ridge                       81.1660833338286            1.2846150240945537          4.338930088482303
+Lasso                       81.1660833338286            1.2846150240945537          4.338930088482303
+Decision Tree Regressor     79.5242566232938            1.121212121212121           4.717171717171717
+Random Forest Regressor     89.98486230812156           0.9777777777777777          2.3072727272727276
+
+
+
+

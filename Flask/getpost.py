@@ -21,7 +21,9 @@ def intro():
 @app.route('/form',methods=['GET','POST'])
 def appli():
     if(request.method=='POST'):
-        name=request.post
+        name=request.form['name']
+    
+    return f"'Hello'{name}"
 
 
 

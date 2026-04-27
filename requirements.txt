@@ -5,3 +5,5 @@ flask
 ipykernel
 matplotlib
 seaborn
+streamlit
+joblib

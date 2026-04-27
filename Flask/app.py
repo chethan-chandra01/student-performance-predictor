@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,request
 
 
 
@@ -16,6 +16,16 @@ def index():
 @app.route("/intro")
 def intro():
     return "Hello !! :)"
+
+@app.route("/form",methods=['GET','POST'])
+def form():
+    if request.method=='POST':
+        name=request.form['name']
+        email=request.form['email']
+        phone=request.form['phone']
+        return f'Hello{name}, your email Id is {email}and your phone number is {phone}'
+    
+    return render_template('form.html')
 
 
 
